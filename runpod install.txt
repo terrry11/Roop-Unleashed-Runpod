@@ -8,5 +8,5 @@ source venv/bin/activate
 3---------------------------------------------------------------------------------
 pip install -r requirements.txt
 apt-get update
-apt install ffmpeg 
+apt install ffmpeg -y
 python run.py

@@ -26,4 +26,5 @@ pip install onnxruntime-directml.txt
 pip install --upgrade gradio --force
 pip install --upgrade fastapi pydantic
 pip install "numpy<2.0"
+pip install --force-reinstall pydantic==2.10.6
 python run.py

@@ -23,9 +23,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 apt-get update
 apt install ffmpeg -y
-pip install onnxruntime-directml.txt
 pip install --upgrade gradio --force
 pip install --upgrade fastapi pydantic
 pip install "numpy<2.0"
 pip install --force-reinstall pydantic==2.10.6
+pip install onnxruntime-gpu==1.19.0
 python run.py

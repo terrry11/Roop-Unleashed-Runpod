@@ -9,6 +9,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 apt-get update
 apt install ffmpeg -y
+pip install --force-reinstall pydantic==2.10.6
 python run.py
 
 Alternative--------------------------------------------------------------------------------

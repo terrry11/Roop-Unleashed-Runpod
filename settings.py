@@ -27,7 +27,7 @@ class Settings:
         self.server_share = self.default_get(data, 'server_share', True)
         self.output_image_format = self.default_get(data, 'output_image_format', 'png')
         self.output_video_format = self.default_get(data, 'output_video_format', 'mp4')
-        self.output_video_codec = self.default_get(data, 'output_video_codec', 'libx265')
+        self.output_video_codec = self.default_get(data, 'output_video_codec', 'libx264')
         self.video_quality = self.default_get(data, 'video_quality', 14)
         self.clear_output = self.default_get(data, 'clear_output', False)
         self.max_threads = self.default_get(data, 'max_threads', 8)

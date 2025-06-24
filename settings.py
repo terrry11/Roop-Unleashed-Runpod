@@ -22,9 +22,9 @@ class Settings:
             data = None
 
         self.selected_theme = self.default_get(data, 'selected_theme', "Default")
-        self.server_name = self.default_get(data, 'server_name', "")
-        self.server_port = self.default_get(data, 'server_port', 0)
-        self.server_share = self.default_get(data, 'server_share', True)
+        self.server_name = self.default_get(data, 'server_name', "0.0.0.0")
+        self.server_port = self.default_get(data, 'server_port', 7860)
+        self.server_share = self.default_get(data, 'server_share', False)
         self.output_image_format = self.default_get(data, 'output_image_format', 'png')
         self.output_video_format = self.default_get(data, 'output_video_format', 'mp4')
         self.output_video_codec = self.default_get(data, 'output_video_codec', 'libx264')
@@ -60,10 +60,8 @@ class Settings:
             'force_cpu' : self.force_cpu,
 			'output_template' : self.output_template,
             'use_os_temp_folder' : self.use_os_temp_folder,
-            'output_show_video' : self.output_show_video
+            'output_show_video' : self.output_show_video,
+            'launch_browser': self.launch_browser
         }
         with open(self.config_file, 'w') as f:
             yaml.dump(data, f)
-
-
-
